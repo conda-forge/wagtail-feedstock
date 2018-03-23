@@ -16,9 +16,7 @@ and offers precise control for designers and developers.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/wagtail-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wagtail-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/wagtail-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/wagtail-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/wagtail-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/wagtail-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/wagtail-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wagtail-feedstock)
 
 Current release info
 ====================
