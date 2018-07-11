@@ -37,6 +37,7 @@ requirements:
     - unidecode >=0.04.14,<1.0
     - willow >=1.1,<1.2
     - requests >=2.11.1,<3.0
+    - l18n
    
 test:
   commands:
