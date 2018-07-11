@@ -1,6 +1,6 @@
 {% set name = "wagtail" %}
-{% set version = "2.0" %}
-{% set sha256 = "6310a43075041f5e3096ba582155056b6ca0970d98421a4ed97ee3cc5569ac62" %}
+{% set version = "2.1.1" %}
+{% set sha256 = "342218f1c48e24b02580afc635cd25be5d9a13b81f7b708f4bbe8a77706ff748" %}
 
 package:
   name: {{ name|lower }}
@@ -37,6 +37,7 @@ requirements:
     - unidecode >=0.04.14,<1.0
     - willow >=1.1,<1.2
     - requests >=2.11.1,<3.0
+    - l18n
    
 test:
   commands:
