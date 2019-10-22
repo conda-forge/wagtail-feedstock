@@ -1,6 +1,6 @@
 {% set name = "wagtail" %}
-{% set version = "2.6.1" %}
-{% set sha256 = "8b66ecf74d40ccc7070944ff2e5a3ae33e42ecf92eb98b92c155410e48f4c974" %}
+{% set version = "2.6.3" %}
+{% set sha256 = "4fc81c712df0a539b5ef1efc9a256ddc3cae5dc934804727462e162e242d3e9f" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - wagtail=wagtail.bin.wagtail:main
 
