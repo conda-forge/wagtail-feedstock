@@ -1,6 +1,6 @@
 {% set name = "wagtail" %}
-{% set version = "2.7" %}
-{% set sha256 = "7c13bad090da20ae7be66af4954329319f6d0088235d85b6439163a143bd317a" %}
+{% set version = "2.9.3" %}
+{% set sha256 = "7dba2e5cebee2bb39e4c3db703eeb428b6ba323d72e5fbf384f1ce81f65f7e42" %}
 
 package:
   name: {{ name|lower }}
@@ -39,7 +39,7 @@ requirements:
     - requests >=2.11.1,<3.0
     - pytz >=2016.6
     - six >=1.11,<2.0
-   
+
 test:
   commands:
     - wagtail help
