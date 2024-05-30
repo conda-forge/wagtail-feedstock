@@ -1,5 +1,5 @@
 {% set name = "wagtail" %}
-{% set version = "6.1.1" %}
+{% set version = "6.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wagtail-{{ version }}.tar.gz
-  sha256: d7b6e5e09970dd74efb63953c42a26fe6c25902e2a6dca4ad7e74ae00facb394
+  sha256: fdb82c6cd6f6ae5c1f7b2312166969d8601015b65cbb29ad120efac727d399c1
 
 build:
   entry_points:
     - wagtail = wagtail.bin.wagtail:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
