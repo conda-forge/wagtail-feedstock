@@ -17,8 +17,6 @@ build:
   number: 0
 
 requirements:
-  build:
-    - setuptools
   host:
     - python >=3.9
     - pip
