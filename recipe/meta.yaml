@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wagtail-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wagtail-{{ version }}.tar.gz
   sha256: 98d94d12183b8fc689a0186ab095e6056bf116c21d94f245bdfd02ed4775442a
 
 build:
