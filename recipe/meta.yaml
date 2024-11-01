@@ -20,6 +20,8 @@ requirements:
   host:
     - python >=3.9
     - pip
+  build:
+    - setuptools
   run:
     - python >=3.9
     - django >=4.2,<6.0
