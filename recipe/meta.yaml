@@ -1,13 +1,13 @@
 {% set name = "wagtail" %}
-{% set version = "6.2.2" %}
+{% set version = "6.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wagtail-{{ version }}.tar.gz
-  sha256: 506ac2b59dae85069ae754b45bc13b91cbd86e92d4f5d663658773b0ed7a16b9
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wagtail-{{ version }}.tar.gz
+  sha256: 98d94d12183b8fc689a0186ab095e6056bf116c21d94f245bdfd02ed4775442a
 
 build:
   entry_points:
@@ -18,21 +18,21 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
+    - setuptools
   run:
-    - python >=3.8
+    - python >=3.9
     - django >=4.2,<6.0
     - django-modelcluster >=6.2.1,<7.0
     - django-permissionedforms >=0.1,<1.0
-    - django-taggit >=4.0,<5.1
+    - django-taggit >=5.0,<6.2
     - django-treebeard >=4.5.1,<5.0
     - djangorestframework >=3.15.1,<4.0
     - django-filter >=23.3,<25
     - draftjs_exporter >=2.1.5,<6.0
-    - pillow >=9.1.0,<11.0.0
+    - pillow >=9.1.0,<12.0.0
     - beautifulsoup4 >=4.8,<4.13
-    - html5lib >=0.999,<2
     - willow >=1.8.0,<2
     - requests >=2.11.1,<3.0
     - l18n >=2018.5
