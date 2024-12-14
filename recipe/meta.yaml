@@ -14,15 +14,15 @@ build:
     - wagtail = wagtail.bin.wagtail:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - django >=4.2,<6.0
     - django-modelcluster >=6.2.1,<7.0
     - django-permissionedforms >=0.1,<1.0
@@ -49,6 +49,7 @@ test:
     - wagtail help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/wagtail/wagtail
