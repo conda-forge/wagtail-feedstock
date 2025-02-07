@@ -46,7 +46,7 @@ test:
     - wagtail
   commands:
     - pip check
-    - wagtail --help
+    - wagtail help
   requires:
     - pip
     - python {{ python_min }}
