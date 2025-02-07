@@ -22,7 +22,6 @@ requirements:
     - pip
     - setuptools
   run:
-    - django-tasks >=0.6.1,<0.7
     - python >={{ python_min }}
     - django >=4.2,<6.0
     - django-modelcluster >=6.2.1,<7.0
@@ -31,80 +30,29 @@ requirements:
     - django-treebeard >=4.5.1,<5.0
     - djangorestframework >=3.15.1,<4.0
     - django-filter >=23.3,<25
+    - django-tasks >=0.6.1,<0.7
     - draftjs_exporter >=2.1.5,<6.0
     - pillow >=9.1.0,<12.0.0
     - beautifulsoup4 >=4.8,<4.13
     - willow >=1.8.0,<2
     - requests >=2.11.1,<3.0
-    - l18n >=2018.5
     - openpyxl >=3.0.10,<4.0
     - anyascii >=0.1.5
     - telepath >=0.3.1,<1
     - laces >=0.1,<0.2
-    # - tblib <3.0,>=2.0
-    # - sphinxcontrib-spelling <8,>=7
-    # - sphinx-wagtail-theme ==6.4.0
-    # - sphinx-autobuild >=0.6.0
-    # - semgrep ==1.40.0
-    # - ruff ==0.1.5
-    # - python-dateutil >=2.7
-    # - pyenchant <4,>=3.1.1
-    # - polib <2.0,>=1.1
-    # - myst-parser ==2.0.0
-    # - freezegun >=0.3.8
-    # - factory_boy >=3.2
-    # - doc8 ==0.8.1
-    # - djhtml ==3.0.6
-    # - django-pattern-library >=0.7
-    # - curlylint ==0.13.1
-    # - coverage >=3.7.0
-    # - boto3 <2,>=1.28
-    # - azure-mgmt-frontdoor <1.1,>=1.0
-    # - azure-mgmt-cdn <13.0,>=12.0
-    # - Willow <2,>=1.8.0
-    # - Sphinx >=7.3
-    # - Pillow <12.0.0,>=9.1.0
-    # - Jinja2 <3.2,>=3.0
-    # - Django <6.0,>=4.2
-    # - tblib <3.0,>=2.0
-    # - sphinxcontrib-spelling <8,>=7
-    # - sphinx-wagtail-theme ==6.4.0
-    # - sphinx-autobuild >=0.6.0
-    # - semgrep ==1.40.0
-    # - ruff ==0.1.5
-    # - python-dateutil >=2.7
-    # - pyenchant <4,>=3.1.1
-    # - polib <2.0,>=1.1
-    # - myst-parser ==2.0.0
-    # - freezegun >=0.3.8
-    # - factory_boy >=3.2
-    # - doc8 ==0.8.1
-    # - djhtml ==3.0.6
-    # - django-tasks <0.7,>=0.6.1
-    # - django-pattern-library >=0.7
-    # - curlylint ==0.13.1
-    # - coverage >=3.7.0
-    # - boto3 <2,>=1.28
-    # - azure-mgmt-frontdoor <1.1,>=1.0
-    # - azure-mgmt-cdn <13.0,>=12.0
-    # - Willow <2,>=1.8.0
-    # - Sphinx >=7.3
-    # - Pillow <12.0.0,>=9.1.0
-    # - Jinja2 <3.2,>=3.0
-    # - Django <6.0,>=4.2
 
 test:
   imports:
     - wagtail
   commands:
     - pip check
-    - wagtail help
+    - wagtail --help
   requires:
     - pip
     - python {{ python_min }}
 
 about:
-  home: https://github.com/wagtail/wagtail
+  home: https://wagtail.org/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
