@@ -7,7 +7,7 @@ Home: https://wagtail.org/
 
 Package license: BSD-3-Clause
 
-Summary: A Django content management system focused on flexibility and user experience 
+Summary: A Django content management system focused on flexibility and user experience
 
 Development: https://github.com/wagtail/wagtail
 
@@ -15,7 +15,6 @@ Documentation: https://docs.wagtail.org/en/stable/
 
 Wagtail is an open source content management system built on Django, with a strong community and commercial support.
 It's focused on user experience, and offers precise control for designers and developers.
-
 
 Current build status
 ====================
