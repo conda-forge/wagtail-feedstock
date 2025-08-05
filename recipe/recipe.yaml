@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: wagtail
-  version: "7.0.2"
+  version: "7.1"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/wagtail-${{ version }}.tar.gz
-  sha256: 053c8dfa3d41979eb8bb5d76e82b1b251926fa263766744f33e452b00e82fe68
+  sha256: e1de2af82b62cbf4d3b77a93c55779bc67ad7b3179b6b4f824ec4f214d570c01
 
 build:
   number: 0
@@ -44,7 +44,7 @@ requirements:
     - anyascii >=0.1.5
     - telepath >=0.3.1,<1
     - laces >=0.1,<0.2
-    - django-tasks >=0.7,<0.8
+    - django-tasks >=0.8,<0.9
 
 tests:
   - python:
