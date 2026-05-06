@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: wagtail
-  version: '7.4'
+  version: "7.4"
 
 package:
   name: ${{ name|lower }}
@@ -52,7 +52,8 @@ tests:
         - wagtail
       pip_check: true
       python_version:
-        - ${{ python_min }}.*
+      - ${{ python_min }}.*
+      - "*"
   - requirements:
       run:
         - pip
