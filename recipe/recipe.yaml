@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: wagtail
-  version: "7.4.2"
+  version: "7.4.3"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/wagtail-${{ version }}.tar.gz
-  sha256: 6e261b50693abfbe2b738717bedc5bd0915e2e08efb9400102f4098c0c03aaab
+  sha256: e359e457ba7838b1c398f7169e34e203cefd75df9062eb8ecadb4be8f1c52912
 
 build:
   number: 0
