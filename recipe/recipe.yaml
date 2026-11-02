@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: wagtail
-  version: "8.0.1"
+  version: '8.1'
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/wagtail-${{ version }}.tar.gz
-  sha256: 819865a10bce86b16288cfaefa4195b90ffb5e7ac494fb18659e7be099ef386f
+  sha256: 5c1abb0e11efc31454db0b5312d6786b5d8fdfbef5c815b7d8bacb2ad6bd486c
 
 build:
   number: 0
@@ -35,7 +35,7 @@ requirements:
     - django-treebeard >=4.8,<6.0
     - djangorestframework >=3.18.0,<4.0
     - django-filter >=23.3
-    - draftjs_exporter >=7.1.0,<8.0
+    - draftjs_exporter >=7.3.0,<8.0
     - pillow >=9.1.0
     - beautifulsoup4 >=4.13.3,<5
     - willow >=1.11.0,<2
